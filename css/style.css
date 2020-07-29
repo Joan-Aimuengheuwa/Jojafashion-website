@@ -1,0 +1,776 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.4s;
+    font-family: -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+.container1{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Navbar section */
+
+.nav{
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    line-height: 65px;
+    text-align: center;
+    background-color: white;
+    
+}
+
+.nav div.logo{
+    width: 180px;
+    height: 10px;
+    position: absolute;
+
+}
+.img {
+    width: 60px;
+    height: 50px;
+    margin-top: 6px;
+    margin-left: 200px;
+}
+.spanJo {
+    color: rgb(252, 27, 65);
+    font-family: fantasy;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    
+}
+
+.a{
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+.nav div.main_list{
+    width: 600px;
+    height: 65px;
+    float: right;
+}
+
+.nav div.main_list ul{
+    width:100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+}
+
+.nav div.main_list ul li{
+    width: 120px;
+    height: 65px;
+}
+
+.nav div.main_list ul li a{
+    text-decoration: none;
+    color: rgb(252, 27, 65);
+    line-height: 65px;
+    text-transform: uppercase;
+}
+
+.nav div.main_list ul li a:hover{
+    color: #645858;
+}
+
+.nav div.media_button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    display: none;
+}
+
+.nav div.media_button button.main_media_button {
+    width: 100%;
+    height: 100%;
+    background-color:transparent;
+    color: rgb(252, 27, 65);
+    outline: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.nav div.media_button button.main_media_button span{
+    width: 98%;
+    height: 1px;
+    display: block;
+    background-color: rgb(252, 27, 65);
+    color: rgb(252, 27, 65);
+    margin-top: 9px;
+    margin-bottom: 10px;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(1){
+    transform: rotateY(180deg);
+    transition: all 0.5s;
+    background-color: rgb(252, 27, 65);
+    color: rgb(252, 27, 65);
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(2){
+    transform: rotateY(180deg);
+    transition: all 0.4s;
+    background-color: rgb(252, 27, 65);
+    color: rgb(252, 27, 65);
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(3){
+    transform: rotateY(180deg);
+    transition: all 0.3s;
+    background-color: rgb(252, 27, 65);
+    color: rgb(252, 27, 65);
+}
+
+.nav div.media_button button.active span:nth-of-type(1) {
+    transform: rotate3d(0, 0, 1, 45deg);
+    position: absolute;
+    margin: 0;
+}
+
+.nav div.media_button button.active span:nth-of-type(2) {
+    display: none;
+}
+
+.nav div.media_button button.active span:nth-of-type(3) {
+    transform: rotate3d(0, 0, 1, -45deg);
+    position: absolute;
+    margin: 0;
+}
+
+.nav div.media_button button.active:hover span:nth-of-type(1) {
+    transform: rotate3d(0, 0, 1, 20deg);
+}
+
+.nav div.media_button button.active:hover span:nth-of-type(3) {
+    transform: rotate3d(0, 0, 1, -20deg);
+}
+
+/* Home section */
+.home {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+
+.div1 {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../images/two.jpg") no-repeat;
+    background-size: cover;
+}
+.h2 {
+    color: rgb(253, 9, 50);
+    font-size: 120px;
+    text-align: center;
+    padding-top: 100px;
+    font-family: fantasy;
+    font-weight: bold;
+    box-shadow: 0 5px 10px -1px #888888;
+    text-shadow: 0 5px 10px 10px rgb(94, 2, 94);
+    
+}
+.h3 {
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    box-shadow: 0 5px 10px 5px #888888;
+    text-shadow: 0 5px 10px 10px rgb(20, 20, 20);
+    
+}
+.div2 {
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    display: flex;
+}
+.div3 {
+    font-family: sans-serif;
+    color: rgb(252, 27, 65);
+    text-align: center;
+    margin: 20px;
+    border: 2px solid rgb(252, 27, 65);
+    border-radius: 50%;
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+    box-shadow: 10px 10px #888888;
+
+}
+
+.h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 50px;
+    margin: 20px;
+    font-weight: bold;
+
+}
+.p2 {
+    font-size: 18px;
+}
+.h6 {
+    color: black;
+    margin: 20px;
+}
+
+.div4 {
+    font-family: sans-serif;
+    color: rgb(252, 27, 65);
+    text-align: center;
+    margin: 20px;
+    width: 400px;
+    height: 300px;
+
+}
+.fa-bullseye {
+    color: black;
+}
+.p3 {
+    font-size: 18px;
+    color: black;
+}
+.hh6 {
+    color: rgb(252, 27, 65);
+    margin: 20px;
+}
+footer {
+    width: 100%;
+    height: 65px;
+    position: relative;
+    line-height: 65px;
+    text-align: center;
+    background-color: rgb(24, 22, 22);
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-top: auto;
+    margin-bottom: 0;
+
+}
+
+.div5 {
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
+}
+.div6 {
+    width: 50%;
+    text-align: justify;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    color: rgb(75, 69, 69);
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.div7 {
+    width: 50%;
+    height: 300px;
+    background: url("../images/dioorrr.PNG") no-repeat;
+    background-size: cover;
+}
+
+.about{
+    text-align: center;
+    font-family: fantasy;
+    font-size: 50px;
+    margin: 20px;
+    padding-top: 80px;
+    font-weight: bold;
+    color: rgb(252, 27, 65);
+    
+
+}
+.about2{
+    text-align: center;
+    font-family: fantasy;
+    margin-top: -30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(252, 27, 65);
+
+}
+
+.div8 {
+    width: 50%;
+    height: 300px;
+    background: url("../images/COLORFULBAGS.PNG") no-repeat;
+    background-size: cover;
+    
+}
+
+.center {
+    margin-top: 48px;
+}
+
+.div9 {
+    width: 50%;
+    height: 300px;
+    background: url("../images/fashion designn.PNG") no-repeat;
+    background-size: cover;
+    margin-left: 30px;
+
+}
+
+.div10 {
+    width: 50%;
+    text-align: justify;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    color: rgb(75, 69, 69);
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-left: 40px;
+}
+
+
+.perc {
+    position:absolute; 
+    display:none; 
+    top: 0; 
+    line-height:30px; 
+    right:10px;
+    color:white;
+}
+.container {
+    position: relative;
+    width: 70%;
+    height: 30px;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 4px;
+    margin: 10px auto;
+}
+.container:after { position: absolute; top:0; right: 10px;line-height: 30px;}
+.fillmult {
+    height: 100%;
+    width: 0;
+    background-color: rgb(252, 27, 65);
+    color: white;
+    border-radius: 4px;
+    line-height: 30px;
+    text-align: left;
+}
+.fillmult span {
+    padding-left: 10px;
+}
+
+.fillmult2 {
+    height: 100%;
+    width: 0;
+    background-color: rgb(73, 6, 17);
+    color: white;
+    border-radius: 4px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.fillmult2 span {
+    padding-left: 10px;
+}
+
+.fillmult3 {
+    height: 100%;
+    width: 0;
+    background-color: rgb(5, 3, 109);
+    color: white;
+    border-radius: 4px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.fillmult3 span {
+    padding-left: 10px;
+}
+.container3 {
+    position: relative;
+    width: 70%;
+    height: 30px;
+    color: rgb(252, 27, 65);
+    border-radius: 4px;
+    margin: 10px auto;
+    font-size: 20px;
+}
+
+.container4 {
+    position: relative;
+    width: 70%;
+    height: 30px;
+    color: rgb(73, 6, 17);
+    border-radius: 4px;
+    margin: 10px auto;
+    font-size: 20px;
+}
+
+.container5 {
+    position: relative;
+    width: 70%;
+    height: 30px;
+    color: rgb(5, 3, 109);
+    border-radius: 4px;
+    margin: 10px auto;
+    font-size: 20px;
+}
+
+.div11 {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/two.jpg") no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    display: flex;
+    text-align: center;
+   
+}
+  
+  .div12{
+    height: auto;
+    margin: 50px auto;
+    width:30%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #888888;
+    box-shadow: 4px 4px 2px #888888; 
+  }
+  
+  .div12 .input_field{
+    margin-bottom: 10px;
+    border: 1px solid rgb(252, 27, 65);
+    border-radius: 4px;
+    box-shadow: 0 5px 10px -1px rgb(252, 27, 65);
+  }
+  
+  .div12 .input_field input[type="text"], .input_field input[type="number"],
+  .div12 textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(245, 187, 197);
+    border-radius: 4px;
+  }
+  
+  .div12 textarea{
+    resize: none;
+    height: auto;
+  }
+  
+  .div12 .btn input[type="submit"]{
+    border: 0px;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background: rgb(252, 27, 65);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px 5px #888888;
+  }
+  
+  #error_message{
+    margin-bottom: 20px;
+    background: #ff868a;
+    color: white;
+    padding: 0px;
+    border-radius:4px ;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+  }
+
+  .fa-phone{
+    color:white;
+    margin: 10px;
+    margin-top: 60px;
+    margin-right: 3px;
+    padding: 5px;
+    border-radius: 20px;
+    background:linear-gradient(purple, red, orange);
+    font-size: 30px;
+
+    
+}
+  
+  .fa-facebook{
+    color: rgb(6, 6, 126);
+    margin: 10px;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 40px;
+}
+
+ .fa-twitter{
+    color: rgb(23, 23, 206);
+    margin: 10px;
+    padding: 1px;
+    font-size: 40px;
+    background-color: white;
+    border-radius: 20px;
+    
+}
+.fa-instagram{
+    color: white;
+    margin: 10px;
+    padding: 4px;
+    background:linear-gradient(purple, red, orange);
+    border-radius: 20px;
+    font-size: 35px;
+}
+.div13 {
+    text-align: center;
+    
+}
+.div13 a {
+    text-decoration: none;
+    color: rgb(31, 27, 252);
+    font-family: fantasy;
+    font-size: 25px;
+    font-weight: bold;
+    
+
+}
+
+.div14 {
+    display: flex;
+    margin-left: 90px;
+    font-size: 25px;
+    color: rgb(31, 27, 252);
+    font-family: fantasy;
+    font-weight: bold;
+    margin-top: -40px;
+    margin-bottom: -35px;
+}
+
+.float {
+    position: fixed;
+    width:60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+.my-float {
+    margin-top: 10px;
+}
+.fa-whatsapp{
+    color: white;
+    font-size: 40px;
+}
+
+
+
+
+
+/* Media query section */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+
+    .div2 {
+        width: 100%;
+        height: 60vh;
+        background-size: cover;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .spanJo {
+       margin-left: 150px;
+    }
+    .img {
+        margin-left: 120px;
+    }
+
+    .div3 {
+        margin: 10px;
+        border: 2px solid rgb(252, 27, 65);
+        border-radius: 50%;
+        width: 400px;
+        height: 300px;
+    
+    }
+    
+    .h1 {
+        font-size: 40px;
+        margin: 15px;
+        font-weight: bold;
+    
+    }
+    .p2 {
+        font-size: 15px;
+    }
+    .h6 {
+        margin: 15px;
+    }
+    
+    .p3 {
+        font-size: 15px;
+    }
+    .hh6 {
+        margin: 20px;
+    }
+
+    .div5 {
+        display: flex;
+        
+    
+    }
+    .div11 {
+        display: flex;
+    }
+    .div14 {
+        margin-left: 40px;
+    }
+    
+}
+
+
+@media screen and (max-width:768px) {
+    
+    
+    .container{
+        margin: 16px;
+    }
+    .container3{
+        margin: 16px;
+    }
+    .container4{
+        margin: 16px;
+    }
+    .container5{
+        margin: 16px;
+    }
+
+    .div2 {
+        display: block;
+        margin-left: -40px;
+        
+    }
+    .div4{
+        margin-bottom: -40px;
+        margin-top: 40px;
+    }
+
+    .img {
+        width: 60px;
+        height: 50px;
+        margin-top: 6px;
+        margin-left: 10px;
+    }
+    .h1 {
+        text-align: center;
+        font-size: 35px;
+    
+    }
+    .h2 {
+        margin-top: auto;
+        padding-top: 200px;
+    }
+    .div14 {
+        margin-left: 30px;
+    }
+
+    .spanJo {
+        color: rgb(252, 27, 65);
+        font-family: fantasy;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        margin-left: 50px;
+    }
+    
+    
+    .nav div.main_list{
+        width: 100%;
+        margin-top: 10px;
+        height: 0px;
+        overflow: hidden;
+        color: rgb(252, 27, 65);
+
+    }
+    
+    .nav div.show_list{
+        height: 200px;
+    }
+    
+    .nav div.main_list ul{
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        top: 50px;
+        right: 0;
+        left: 0;
+        color: rgb(252, 27, 65);
+    }
+    
+    .nav div.main_list ul li{
+        width: 100%;
+        height: 50px;
+        background-color:white;
+        
+    }
+    
+    .nav div.main_list ul li a{
+      text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        display: table;
+        color: rgb(252, 27, 65);
+    }
+    
+    .nav div.media_button{
+        display: block;
+    }
+    .div5 {
+        display: flex;
+    
+    }
+    .div11 {
+        display: block;
+    }
+
+    .div12{
+        
+        margin: 20px auto;
+        width:80%;
+        
+      }
+
+      .div14 {
+        margin-left: 53px;
+    }
+    
+    
+}
