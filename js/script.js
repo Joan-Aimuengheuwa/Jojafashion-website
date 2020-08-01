@@ -47,6 +47,12 @@ function validate(){
       error_message.innerHTML = text;
       return false;
     }
+    if(name.search(/[0-9]/)!=-1) {
+      text = "Please Enter valid Name";
+      error_message.innerHTML = text;
+      return false;
+
+    }
     if(isNaN(phone) || phone.length != 11){
       text = "Please Enter valid Phone Number";
       error_message.innerHTML = text;
