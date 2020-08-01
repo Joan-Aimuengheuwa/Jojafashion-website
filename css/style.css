@@ -812,12 +812,23 @@ footer {
         margin-left: -100px;
     }
     .spanJo{
-        margin-left: -50px;
+        margin-left: -40px;
     }
     .div4{
         height: 200px;
     }
-    
+    .div13 a, .div14{
+        font-size: 22px;
+    }
+    .fa-twitter,.fa-facebook,.fa-instagram{
+        font-size: 25px;
+    }
+    .fa-phone{
+        margin-right: 5px;
+        font-size: 20px;
+    }
+    .about2{
+        font-size: 23px;
+    }
    
 }
-
